@@ -11,10 +11,10 @@ export const Buttons = function () {
         <span className="gradient"></span>
         <span className="label">Foundry</span>
       </button>
-      <button onClick={() => window.open("https://example.com", "_blank", "noopener,noreferrer")}>
+      <button onClick={() => window.open("https://2e.aonprd.com/", "_blank", "noopener,noreferrer")}>
         <span className="transition"></span>
         <span className="gradient"></span>
-        <span className="label">Button</span>
+        <span className="label">Pathfinder 2E Wiki</span>
       </button>
     </div>
   );

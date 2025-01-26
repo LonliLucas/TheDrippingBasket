@@ -9,6 +9,8 @@ button {
   font-size: 17px;
   padding: 1em 2.7em;
   font-weight: 500;
+  width: 100%;
+  max-width: 300px;
   background: #1f2937;
   color: white;
   border: none;
@@ -17,6 +19,7 @@ button {
   border-radius: 0.6em;
   cursor: pointer;
   display: block;
+  margin: 20px;
 }
 
 .gradient {
@@ -55,7 +58,7 @@ button {
 .button-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: stretch;
   gap: 1rem;
 }
 
