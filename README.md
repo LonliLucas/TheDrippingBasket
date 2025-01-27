@@ -12,14 +12,26 @@ To host this site using Docker:
 1. Ensure you have Traefik running as a reverse proxy with SSL configuration
 1. Clone this repository
 1. Navigate to the project directory
-1. Update the hostname in `docker-compose.yml` if needed (currently set to `thedrippingbasket.brich.one`)
+1. Create a `.env` file from the example:
+
+   ```bash
+   cp .env.example .env
+   ```
+
+1. Update the `.env` file with your values:
+
+   ```bash
+   NGINX_PORT=801        # The internal port Nginx will listen on
+   DOMAIN=example.com    # Your domain name
+   ```
+
 1. Run the following command to build and start the container:
 
    ```bash
    docker compose up --build -d
    ```
 
-1. The site will be available at `https://thedrippingbasket.brich.one` (or your configured domain)
+1. The site will be available at `https://your-domain` (as specified in your .env file)
 
 To stop the container:
 
