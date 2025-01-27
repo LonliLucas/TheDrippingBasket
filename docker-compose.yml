@@ -5,15 +5,19 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
+      args:
+        - NGINX_PORT=${NGINX_PORT}
     networks:
       - traefik
+    environment:
+      - NGINX_PORT=${NGINX_PORT}
     labels:
       - "traefik.enable=true"
-      - "traefik.http.routers.drippingbasket.rule=Host(`thedrippingbasket.brich.one`)"
+      - "traefik.http.routers.drippingbasket.rule=Host(`${DOMAIN}`)"
       - "traefik.http.routers.drippingbasket.entrypoints=https"
       - "traefik.http.routers.drippingbasket.tls=true"
       - "traefik.http.routers.drippingbasket.tls.certresolver=mytls"
-      - "traefik.http.services.drippingbasket.loadbalancer.server.port=801"
+      - "traefik.http.services.drippingbasket.loadbalancer.server.port=${NGINX_PORT}"
 
 networks:
   traefik:
