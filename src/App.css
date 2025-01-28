@@ -18,7 +18,8 @@ button {
   overflow: hidden;
   border-radius: 0.6em;
   cursor: pointer;
-  display: block;
+  display: flex;
+  justify-content: center;
   margin: 20px;
 }
 
@@ -57,8 +58,9 @@ button {
 
 .button-container {
   display: flex;
+  justify-content: center;
   flex-direction: column;
-  align-items: stretch;
+  align-items: center;
   gap: 1rem;
 }
 
