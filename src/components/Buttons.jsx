@@ -1,7 +1,7 @@
 export const Buttons = function () {
   return (
     <div className="button-container">
-      <button onClick={() => window.open("https://wanderersguide.app/campaign/2041", "_blank", "noopener,noreferrer")}>
+      <button onClick={() => window.open("https://wanderersguide.app/characters", "_blank", "noopener,noreferrer")}>
         <span className="transition"></span>
         <span className="gradient"></span>
         <span className="label">Wanderer's Guide</span>
