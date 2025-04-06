@@ -68,8 +68,11 @@ button {
   border-radius: 1rem;
 }
 
-.button-container button {
-  opacity: 1.0;
+.art-credit {
+  color: white;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
 
 button:hover .transition {
